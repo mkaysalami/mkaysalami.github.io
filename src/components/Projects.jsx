@@ -6,7 +6,7 @@ function Projects() {
     {
       title: "CloneStrike",
       subtitle: "December 2025 | Academic",
-      github: "https://github.com/tolani-19/CloneStrike",
+      github: "https://github.com/mkaysalami/CloneStrike",
       description:
         "A project-based application built to strengthen front-end development and component structuring skills.",
       bullets: [
@@ -19,7 +19,7 @@ function Projects() {
     {
       title: "Crypto Dash",
       subtitle: "November 2025 | Academic",
-      github: "https://github.com/tolani-19/crypto-dash",
+      github: "https://github.com/mkaysalami/crypto-dash",
       description:
         "A React-based cryptocurrency dashboard that displays real-time cryptocurrency data.",
       bullets: [
@@ -33,7 +33,7 @@ function Projects() {
       title: "Notes App",
       subtitle: "November 2025 | Academic",
       github:
-        "https://github.com/tolani-19/Modern-React-Mini-Projects/tree/main/notes-app",
+        "https://github.com/mkaysalami/Modern-React-Mini-Projects/tree/main/notes-app",
       description:
         "A simple and responsive note-taking app designed for quick capture and organization.",
       bullets: [
@@ -47,7 +47,7 @@ function Projects() {
       title: "Rating UI",
       subtitle: "November 2025 | Academic",
       github:
-        "https://github.com/tolani-19/Modern-React-Mini-Projects/tree/main/rating-ui",
+        "https://github.com/mkaysalami/Modern-React-Mini-Projects/tree/main/rating-ui",
       description:
         "A user rating interface focused on simple interaction and clean visual feedback.",
       bullets: [
@@ -60,7 +60,7 @@ function Projects() {
     {
       title: "Pontoon Game",
       subtitle: "September 2025 | Academic",
-      github: "https://github.com/tolani-19/pontoon-game",
+      github: "https://github.com/mkaysalami/pontoon-game",
       description:
         "A digital version of the classic pontoon card game with interactive gameplay logic.",
       bullets: [
@@ -73,7 +73,7 @@ function Projects() {
     {
       title: "Predicting Precipitation",
       subtitle: "September 2024 | Academic",
-      github: "https://github.com/tolani-19/predicting-precipitation",
+      github: "https://github.com/mkaysalami/predicting-precipitation",
       description:
         "A predictive modeling project focused on estimating precipitation from weather data.",
       bullets: [
@@ -87,7 +87,7 @@ function Projects() {
     {
       title: "Portfolio Website",
       subtitle: "December 2025 | Personal",
-      github: "https://github.com/tolani-19/predicting-precipitation",
+      github: "https://github.com/mkaysalami/mkaysalami.github.io",
       description:
         "A modern, sophisticated React portfolio website with smooth animations, responsive design, and elegant UI. Built with React, Vite, and modern CSS. Features component-based architecture, intersection observer animations, and a professional design.",
       bullets: [
@@ -101,7 +101,7 @@ function Projects() {
     {
       title: "Hospital Data Analysis",
       subtitle: "January 2026 | Personal",
-      github: "https://github.com/tolani-19/predicting-precipitation",
+      github: "https://github.com/mkaysalami/predicting-precipitation",
       description:
         "A data analysis project using SQL on Hosiptal Data.",
       bullets: [
