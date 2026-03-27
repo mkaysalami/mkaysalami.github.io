@@ -1,0 +1,91 @@
+.certifications-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 7rem 2rem;
+  border-radius: 36px;
+  background: linear-gradient(
+    135deg,
+    rgba(210, 225, 245, 0.35),
+    rgba(235, 220, 255, 0.28)
+  );
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.certifications-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.certifications-heading h2 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--section-heading-color);
+  font-family: inherit;
+  text-align: center;
+}
+
+.certifications-underline {
+  display: none;
+}
+
+.certifications-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certifications-card {
+  width: 350px;
+  min-height: 280px;
+  padding: 2.2rem;
+  border-radius: 28px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1.5px solid rgba(59, 130, 246, 0.22);
+  box-shadow: 0 10px 30px rgba(120, 120, 160, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.certifications-card:hover,
+.certifications-card:focus,
+.certifications-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: #2563eb;
+  box-shadow: 0 16px 36px rgba(37, 99, 235, 0.16);
+  outline: none;
+}
+
+.certifications-icon {
+  font-size: 2.8rem;
+  color: #3b82f6;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.certifications-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-family: inherit;
+}
+
+.certifications-card p span {
+  color: #2563eb;
+  font-weight: 700;
+}

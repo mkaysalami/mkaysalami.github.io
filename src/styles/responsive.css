@@ -1,0 +1,137 @@
+@media (max-width: 1100px) {
+  section {
+    padding: 48px 34px;
+    margin: 16px 24px;
+  }
+
+  #projects .projects-grid {
+    grid-template-columns: repeat(3, minmax(240px, 280px));
+  }
+
+  
+  .hobbies-cloud {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 20px;
+    justify-items: center;
+  }
+
+  .hobby-bubble {
+    position: static;
+    animation: floatBubble 6s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 24px;
+  }
+
+  .nav-links {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  #projects .projects-grid {
+    grid-template-columns: repeat(2, minmax(240px, 280px));
+  }
+
+  .activities-heading h2 {
+    font-size: 2.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  section {
+    margin: 14px;
+    padding: 40px 22px;
+    border-radius: 22px;
+  }
+
+  section h2 {
+    font-size: 1.7rem;
+  }
+
+  #projects .projects-grid {
+    grid-template-columns: repeat(2, minmax(230px, 270px));
+  }
+
+  #activities {
+    padding-bottom: 40px;
+  }
+
+  /* hobbies */
+  .hobbies-cloud {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px 18px;
+  }
+
+  .hobby-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hobby-label {
+    font-size: 0.9rem;
+  }
+
+  /* activity cards */
+  .activity-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activity-card-body {
+    padding: 18px 20px 22px;
+  }
+
+  .activity-year {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  #projects .projects-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  #projects .project-card {
+    max-width: 300px;
+  }
+
+  .hobbies-cloud {
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 32px 16px;
+    margin: 12px 10px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .activities-tabs {
+    gap: 10px;
+  }
+
+  .activities-tab {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,330 @@
+:root {
+  --bg-color: #dbe6f5;
+  --text-color: #191a1c;
+  --nav-bg: #ffffff;
+  --border-color: #d6e2f1;
+  --btn-bg: #1a73e8;
+  --btn-text: #ffffff;
+  --btn-border: #1a73e8;
+  --h1-color: #1f3a5f;
+  --h2-color: #1f3a5f;
+
+  --section-bg: rgba(255, 255, 255, 0.25);
+  --section-heading-color: #1f3b6d;
+}
+
+body.dark {
+  --bg-color: #071b4a;
+  --text-color: #eef4ff;
+  --nav-bg: rgba(6, 22, 58, 0.92);
+  --border-color: #243b6b;
+  --btn-bg: #3b82f6;
+  --btn-text: #ffffff;
+  --btn-border: #3b82f6;
+  --h1-color: #cfe2ff;
+  --h2-color: #cfe2ff;
+
+  --section-bg: rgba(255, 255, 255, 0.05);
+  --section-heading-color: #dbe8ff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.buttons .btn {
+  padding: 12px 22px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons .btn:hover {
+  transform: translateY(-2px);
+}
+
+.buttons .secondary {
+  background-color: transparent;
+  border: 2px solid var(--btn-border);
+  color: var(--btn-border);
+}
+
+
+section {
+  padding: 56px 60px;
+  scroll-margin-top: 90px;
+  text-align: left;
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  margin: 18px 40px;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 1;
+}
+
+section > * {
+  position: relative;
+  z-index: 1;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--h2-color);
+}
+
+section p {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+
+#about::before,
+#projects::before {
+  background:
+    radial-gradient(
+      900px 550px at 20% 15%,
+      rgba(26, 115, 232, 0.14),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 550px at 80% 35%,
+      rgba(124, 58, 237, 0.1),
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.035)
+    );
+}
+
+#experiences::before {
+  background:
+    radial-gradient(
+      900px 550px at 18% 18%,
+      rgba(26, 115, 232, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 550px at 82% 30%,
+      rgba(80, 220, 255, 0.08),
+      transparent 65%
+    ),
+    radial-gradient(
+      900px 550px at 65% 85%,
+      rgba(34, 197, 94, 0.045),
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.035)
+    );
+}
+
+#activities::before,
+#certifications::before,
+#skills::before {
+  background:
+    radial-gradient(
+      800px 500px at 20% 15%,
+      rgba(26, 115, 232, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px 500px at 80% 20%,
+      rgba(124, 58, 237, 0.08),
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+#contact {
+  background: #2f5fa8;
+}
+
+#contact::before {
+  background:
+    radial-gradient(
+      900px 520px at 15% 20%,
+      rgba(150, 190, 255, 0.18),
+      transparent 58%
+    ),
+    radial-gradient(
+      900px 520px at 85% 25%,
+      rgba(210, 225, 255, 0.12),
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(47, 95, 168, 0.92),
+      rgba(63, 115, 194, 0.95)
+    );
+}
+
+body.dark #about::before,
+body.dark #projects::before {
+  background:
+    radial-gradient(
+      900px 550px at 20% 15%,
+      rgba(59, 130, 246, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 550px at 80% 35%,
+      rgba(124, 92, 255, 0.12),
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.012)
+    );
+}
+
+body.dark #experiences::before {
+  background:
+    radial-gradient(
+      900px 550px at 18% 18%,
+      rgba(59, 130, 246, 0.13),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 550px at 82% 30%,
+      rgba(80, 220, 255, 0.09),
+      transparent 65%
+    ),
+    radial-gradient(
+      900px 550px at 65% 85%,
+      rgba(34, 197, 94, 0.04),
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.008)
+    );
+}
+
+body.dark #activities::before,
+body.dark #certifications::before,
+body.dark #skills::before {
+  background:
+    radial-gradient(
+      800px 500px at 20% 15%,
+      rgba(59, 130, 246, 0.13),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px 500px at 80% 20%,
+      rgba(124, 92, 255, 0.1),
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.018),
+      rgba(255, 255, 255, 0.008)
+    );
+}
+
+body.dark #contact {
+  background: #2f5fa8;
+}
+
+body.dark #contact::before {
+  background:
+    radial-gradient(
+      900px 520px at 15% 20%,
+      rgba(150, 190, 255, 0.18),
+      transparent 58%
+    ),
+    radial-gradient(
+      900px 520px at 85% 25%,
+      rgba(210, 225, 255, 0.12),
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(47, 95, 168, 0.92),
+      rgba(63, 115, 194, 0.95)
+    );
+}
+
+
+#about,
+#experiences,
+#certifications,
+#skills,
+#contact {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+#projects {
+  padding-top: 52px;
+  padding-bottom: 24px;
+  margin-bottom: 6px;
+}
+
+#activities {
+  padding-top: 24px;
+  padding-bottom: 56px;
+  margin-top: 0;
+}
+
+
+#about,
+#experiences,
+#projects,
+#activities,
+#certifications,
+#skills {
+  background: transparent;
+}

@@ -1,0 +1,152 @@
+#about {
+  background: transparent;
+}
+
+.about-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+  padding: 32px;
+  flex-wrap: wrap;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.about-header-text {
+  text-align: left;
+  flex: 1;
+}
+
+.about-header-text h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: var(--h1-color);
+}
+
+.about-header-text h2 {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--h2-color);
+  margin-bottom: 15px;
+}
+
+.intro-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+  color: var(--h1-color);
+  opacity: 0;
+  transform: translateY(35px);
+  animation: floatInHeading 1.2s ease-out forwards;
+}
+
+.fade-in-delay-1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.fade-in-delay-2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.about-me {
+  max-width: 750px;
+  margin: 30px 0 0 0;
+  padding-left: 20px;
+  border-left: 4px solid var(--btn-bg);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.about-me p:first-of-type::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+  color: var(--btn-bg);
+}
+
+.about-me a {
+  color: var(--btn-bg);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.about-me a:hover {
+  color: #1543b6;
+}
+
+@keyframes floatInHeading {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.dark .about-header {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+body.dark .profile-pic {
+  border: 4px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+body.dark .about-me a {
+  color: #8ab4f8;
+}

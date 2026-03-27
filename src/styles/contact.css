@@ -1,0 +1,190 @@
+.contact-section {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 100px 20px;
+  text-align: center;
+  background: #6b8db3;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#contact {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+
+#contact::before {
+  display: none;
+}
+
+.contact-section .section-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-section .section-header h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.contact-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #eef4ff;
+  margin: 0;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  width: 350px;
+  min-height: 280px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 22px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.16);
+}
+
+.contact-card:active {
+  transform: scale(0.97);
+}
+
+.contact-card:focus,
+.contact-card:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(255, 255, 255, 0.28),
+    0 16px 30px rgba(0, 0, 0, 0.16);
+}
+
+.contact-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  background: rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-icon i {
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+/* Icon colors */
+.contact-card.email .contact-icon i {
+  color: #ea4335;
+}
+
+.contact-card.linkedin .contact-icon i {
+  color: #0a66c2;
+}
+
+.contact-card.github .contact-icon i {
+  color: #171515;
+}
+
+/* Icon circle hover */
+.contact-card:hover .contact-icon {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+.contact-card:active .contact-icon {
+  transform: scale(0.96);
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.contact-card:focus .contact-icon,
+.contact-card:focus-visible .contact-icon {
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Glow per icon */
+.contact-card.email:hover .contact-icon i,
+.contact-card.email:focus-visible .contact-icon i,
+.contact-card.email:active .contact-icon i {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 10px rgba(234, 67, 53, 0.55));
+}
+
+.contact-card.linkedin:hover .contact-icon i,
+.contact-card.linkedin:focus-visible .contact-icon i,
+.contact-card.linkedin:active .contact-icon i {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 10px rgba(10, 102, 194, 0.55));
+}
+
+.contact-card.github:hover .contact-icon i,
+.contact-card.github:focus-visible .contact-icon i,
+.contact-card.github:active .contact-icon i {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 10px rgba(23, 21, 21, 0.45));
+}
+
+body.dark .contact-card.github .contact-icon i {
+  color: #f5f5f5;
+}
+
+body.dark .contact-card.github:hover .contact-icon i,
+body.dark .contact-card.github:focus-visible .contact-icon i,
+body.dark .contact-card.github:active .contact-icon i {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contact-card p {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #f5f7fb;
+}
+
+.contact-card a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+body.dark .contact-card a {
+  color: #ffffff;
+}
