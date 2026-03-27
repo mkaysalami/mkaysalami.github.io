@@ -8,7 +8,6 @@
     grid-template-columns: repeat(3, minmax(240px, 280px));
   }
 
-  
   .hobbies-cloud {
     min-height: auto;
     display: grid;
@@ -28,11 +27,6 @@
     padding: 15px 24px;
   }
 
-  .nav-links {
-    gap: 14px;
-    flex-wrap: wrap;
-  }
-
   #projects .projects-grid {
     grid-template-columns: repeat(2, minmax(240px, 280px));
   }
@@ -46,6 +40,68 @@
   body {
     font-size: 16px;
     line-height: 1.7;
+  }
+
+  .navbar {
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 0 0 18px 18px;
+    position: sticky;
+  }
+
+  .navbar-left {
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .theme-switch-label {
+    --w: 48px;
+    --h: 28px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 16px;
+    right: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+    background: var(--nav-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(12px);
+    z-index: 1050;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 0.98rem;
+    padding: 10px 12px;
+    width: 100%;
+  }
+
+  .nav-link::after {
+    display: none;
   }
 
   section {
@@ -66,7 +122,6 @@
     padding-bottom: 40px;
   }
 
-  /* hobbies */
   .hobbies-cloud {
     grid-template-columns: repeat(2, 1fr);
     padding: 24px 18px;
@@ -81,7 +136,6 @@
     font-size: 0.9rem;
   }
 
-  /* activity cards */
   .activity-card-top {
     flex-direction: column;
     align-items: flex-start;
@@ -117,6 +171,36 @@
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .theme-switch-label {
+    --w: 44px;
+    --h: 26px;
+  }
+
+  .hamburger {
+    font-size: 1.6rem;
+    padding: 2px 6px;
+  }
+
+  .nav-links {
+    left: 12px;
+    right: 12px;
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 9px 10px;
+  }
+
   section {
     padding: 32px 16px;
     margin: 12px 10px;
