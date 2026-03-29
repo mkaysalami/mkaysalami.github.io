@@ -101,7 +101,7 @@ function Projects() {
     {
       title: "Hospital Data Analysis",
       subtitle: "January 2026 | Personal",
-      github: "https://github.com/mkaysalami/predicting-precipitation",
+      github: "https://github.com/mkaysalami/Hospital-Data-Analysis",
       description:
         "A data analysis project using SQL on Hosiptal Data.",
       bullets: [
