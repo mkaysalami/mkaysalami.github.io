@@ -18,7 +18,7 @@ function About() {
 
           <div className="about-me">
             <p>
-              I’m a third-year Computer Science student with a minor in
+              I’m a fourth-year Computer Science student with a minor in
               Mathematics at{" "}
               <a
                 href="https://www.mun.ca/main/become-a-student/"
